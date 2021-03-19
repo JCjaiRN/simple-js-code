@@ -1,0 +1,86 @@
+<html>
+	<head>
+	<title>simple js code</title>
+    <script language="javascript">  
+        function ChangeColor()  
+        {  
+             document.getElementById('btn1').style.backgroundColor='EB2E0C';  
+             setTimeout("ChangeColor2()",1500);  
+        }  
+        function ChangeColor2()  
+        {  
+             document.getElementById('btn1').style.backgroundColor='F4941F';  
+             setTimeout("ChangeColor3()",1000);  
+        }  
+        function ChangeColor3()  
+        {  
+             document.getElementById('btn1').style.backgroundColor='892358';  
+             setTimeout("ChangeColor4()",1500);  
+        }  
+        function ChangeColor4()  
+        {  
+             document.getElementById('btn1').style.backgroundColor='F6BC05';  
+             setTimeout("ChangeColor5()",1000);  
+        }  
+        function ChangeColor5()  
+        {  
+             document.getElementById('btn1').style.backgroundColor='676B26';  
+             setTimeout("ChangeColor6()",1500);  
+        } 
+        function ChangeColor6()  
+        {  
+             document.getElementById('btn1').style.backgroundColor='753D38';  
+             setTimeout("ChangeColor7()",1000);  
+        }   
+        function ChangeColor7()  
+        {  
+             document.getElementById('btn1').style.backgroundColor='pink';  
+             setTimeout("ChangeColor8()",1500);  
+        }  
+        function ChangeColor8()  
+        {  
+             document.getElementById('btn1').style.backgroundColor='AE1100';  
+             setTimeout("ChangeColor9()",1000); 
+        } 
+        function ChangeColor9()  
+        {  
+             document.getElementById('btn1').style.backgroundColor='F25A00';  
+             setTimeout("ChangeColor10()",1500);  
+        }   
+        function ChangeColor10()  
+        {  
+             document.getElementById('btn1').style.backgroundColor='FEA008';  
+        }  
+        function trigger()
+        {
+        document.getElementById("hover").addEventListener("mouseover", popup);
+        function popup()
+        {
+        alert("Welcome to my WebPage!!! This webpage shows different background. ");
+        }
+        }
+   </script> 
+   <style>
+       .body{color: black;}
+       input{font-size: 247px;
+            font-family: 'Times New Roman', Times, serif;
+            height: 700px ;
+            width: 1330px;
+            
+        }
+       p
+        {
+             font-size:50px;
+          position: fixed;
+             left: 500px;
+             top: 300px;
+             margin-top: auto;
+        }
+   </style> 
+</head>  
+
+<body onload="trigger();"> 
+    <input type="button" onmouseover="ChangeColor()" value="" id="btn1" />  
+   <p id="hover">Welcome!!! Buddy</p>
+</body>  
+	</html>
